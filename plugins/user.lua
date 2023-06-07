@@ -10,4 +10,8 @@ return {
     end,
   },
   "Mofiqul/dracula.nvim",
+  { "EdenEast/nightfox.nvim" },
+  { "oxfist/night-owl.nvim" },
+  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  {  'embark-theme/vim', name='embark', lazy = false },
 }

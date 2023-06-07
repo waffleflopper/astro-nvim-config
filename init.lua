@@ -32,7 +32,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "dracula",
+  colorscheme = "embark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -64,8 +64,15 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      -- "cssls"
     },
+    ["server-settings"] = {
+      cssls = {
+        lint = {
+          unknownAtRules = "ignore"
+        }
+      }
+    }
   },
 
   -- Configure require("lazy").setup() options
